@@ -8,9 +8,8 @@ TIMEOUT=${TIMEOUT-60}
 APP_ROOT=/home/ns_web
 UNICORN=$rvm_path/bin/bootup_unicorn
 CONFIG_FILE=$APP_ROOT/config/unicorn.rb
-PID=$APP_ROOT/tmp/pids/unicorn.pid
 CMD="$APP_ROOT/bin/unicorn -D -c $APP_ROOT/config/unicorn.rb -E production"
-# INIT_CONF=$APP_ROOT/config/init.conf
+
 action="$1"
 set -u
 
