@@ -6,7 +6,7 @@ pid "#{root}/tmp/pids/unicorn.pid"
 stderr_path "#{root}/log/unicorn.stderr.log"
 stdout_path "#{root}/log/unicorn.stdout.log"
 
-listen "/tmp/unicorn.sock", :backlog => 64
+listen "/home/webmaster/ns_web/tmp/unicorn.sock", :backlog => 64
 
 timeout 30
 
