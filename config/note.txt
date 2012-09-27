@@ -1,0 +1,3 @@
+--data transfer
+scp /20120927032010.sql root@master:/home/
+mysql -u root -p -D nsweb < /home/20120927032010.sql
